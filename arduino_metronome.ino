@@ -1,7 +1,7 @@
 // Metronome (from Arduino for Musicians)
 
 // Constants for output of tone to speaker
-const int speakerPin = 9;
+const int speakerPin = 9; // 100 Ohm resistor from pin 9, to speaker +
 const int frequency = 880;
 const int duration = 50;
 
