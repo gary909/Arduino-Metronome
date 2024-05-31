@@ -6,7 +6,7 @@ const int frequency = 880;
 const int duration = 50;
 
 // Pot Pin:
-const int potPin  = 0;
+const int potPin = 0;
 
 //var to track pot val
 int potValue;
@@ -15,14 +15,15 @@ int potValue;
 unsigned int beats_per_minute = 60;
 unsigned int MS_per_beat = 0;
 
-void setup() {
+void setup() 
+{
   // Calcualte the beats_per_minute based on tempo in BPM:
   unsigned int milliseconds_per_minute = 1000 * 60;
   MS_per_beat = milliseconds_per_minute/beats_per_minute;
-
 }
 
-void loop() {
+void loop() 
+{
   // Check the status of the pot:
   int value = analogRead(potPin);
   // Recalculate tempo if val changes
